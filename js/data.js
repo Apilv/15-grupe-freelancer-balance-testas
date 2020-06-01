@@ -12,3 +12,51 @@ const account = [
     { month: 8, income: 450, expense: 120 },
     { month: 12, expense: 200 }
 ];
+
+let monthName = '';
+
+for (let i = 0; i < account.length; i++) {
+    
+      switch (account[i].month) {
+         case 1:
+            monthName += ' Sausis,'
+        break;
+         case 2:
+            monthName += ' Vasaris,'
+            break;
+         case 3:
+             monthName += ' Kovas,'
+         break;
+         case 4:
+             monthName += ' Balandis,'
+         break;
+          case 5:
+              monthName += ' Geguze,'
+          break;
+          case 6:
+              monthName += ' Birzelis,'
+           break;
+           case 7:
+               monthName += ' Liepa,'
+           break;
+           case 8:
+               monthName += ' Rugpjutis,'
+           break;
+           case 9:
+               monthName += ' Rugsejis,'
+           break;
+           case 10:
+               monthName += 'Spalis,'
+           break;
+           case 11:
+               monthName += ' Lapkritis,'
+           break;
+           case 12:
+               monthName += ' Gruodis.'
+           break;
+          default:
+              break;
+      } 
+    }
+
+console.log(monthName);
