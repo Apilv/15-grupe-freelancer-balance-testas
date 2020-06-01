@@ -13,7 +13,11 @@ const account = [
     { month: 12, expense: 200 }
 ];
 
+
+const isvada = document.querySelector('.summary-list')
+
 let monthName = '';
+
 
 for (let i = 0; i < account.length; i++) {
     
@@ -57,6 +61,10 @@ for (let i = 0; i < account.length; i++) {
           default:
               break;
       } 
+
+    if(account[i].income > 0){
+        
     }
 
-console.log(monthName);
+    }
+
